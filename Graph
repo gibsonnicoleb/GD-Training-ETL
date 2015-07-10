@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph author="nicolegibson" created="Mon Jan 05 13:58:00 PST 2015" guiVersion="3.4.4.P" id="1420499905660" licenseType="Commercial" modified="Fri Jul 10 13:12:58 PDT 2015" modifiedBy="nicolegibson" name="Training Graph" revision="1.186" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata4" previewAttachment="/Users/nicolegibson/Desktop/GD_Tickets.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="GD_Tickets.csv" name="GD_Tickets_csv" previewAttachment="/Users/nicolegibson/Desktop/GD_Tickets.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="both" quotedStrings="true" recordDelimiter="\r" skipSourceRows="1" type="delimited">
+<Field label="Summation column" name="Summation_column" type="string"/>
+<Field label="Id" name="Id" type="string"/>
+<Field label="Requester" name="Requester" type="string"/>
+<Field label="Requester id" name="Requester_id" type="string"/>
+<Field label="Requester external id" name="Requester_external_id" type="string"/>
+<Field label="Requester email" name="Requester_email" type="string"/>
+<Field label="Requester domain" name="Requester_domain" type="string"/>
+<Field label="Submitter" name="Submitter" type="string"/>
+<Field label="Assignee" name="Assignee" type="string"/>
+<Field label="Group" name="Group" type="string"/>
+<Field label="Subject" name="Subject" type="string"/>
+<Field label="Tags" name="Tags" type="string"/>
+<Field label="Status" name="Status" type="string"/>
+<Field label="Priority" name="Priority" type="string"/>
+<Field label="Via" name="Via" type="string"/>
+<Field label="Ticket type" name="Ticket_type" type="string"/>
+<Field format="MM/dd/yy" label="Created at" name="Created_at" type="date"/>
+<Field format="MM/dd/yy" label="Updated at" name="Updated_at" type="date"/>
+<Field format="MM/dd/yy" label="Assigned at" name="Assigned_at" type="date"/>
+<Field label="Organization" name="Organization" type="string"/>
+<Field format="MM/dd/yy" label="Due date" name="Due_date" type="date"/>
+<Field format="MM/dd/yy" label="Initially assigned at" name="Initially_assigned_at" type="date"/>
+<Field format="MM/dd/yy" label="Solved at" name="Solved_at" type="date"/>
+<Field label="Resolution time" name="Resolution_time" type="number"/>
+<Field label="Satisfaction Score" name="Satisfaction_Score" type="string"/>
+<Field label="Group stations" name="Group_stations" type="number"/>
+<Field label="Assignee stations" name="Assignee_stations" type="number"/>
+<Field label="Reopens" name="Reopens" type="number"/>
+<Field label="Replies" name="Replies" type="number"/>
+<Field label="First reply time in minutes" name="First_reply_time_in_minutes" type="number"/>
+<Field label="First reply time in minutes within business hours" name="First_reply_time_in_minutes_within_business_hours" type="number"/>
+<Field label="First resolution time in minutes" name="First_resolution_time_in_minutes" type="number"/>
+<Field label="First resolution time in minutes within business hours" name="First_resolution_time_in_minutes_within_business_hours" type="number"/>
+<Field label="Full resolution time in minutes" name="Full_resolution_time_in_minutes" type="number"/>
+<Field label="Full resolution time in minutes within business hours" name="Full_resolution_time_in_minutes_within_business_hours" type="number"/>
+<Field label="Agent wait time in minutes" name="Agent_wait_time_in_minutes" type="number"/>
+<Field label="Agent wait time in minutes within business hours" name="Agent_wait_time_in_minutes_within_business_hours" type="number"/>
+<Field label="Requester wait time in minutes" name="Requester_wait_time_in_minutes" type="number"/>
+<Field label="Requester wait time in minutes within business hours" name="Requester_wait_time_in_minutes_within_business_hours" type="number"/>
+<Field label="On hold time in minutes" name="On_hold_time_in_minutes" type="number"/>
+<Field label="On hold time in minutes within business hours" name="On_hold_time_in_minutes_within_business_hours" type="number"/>
+<Field label="Template [list]" name="Template_list" type="string"/>
+<Field label="Category 1 [list]" name="Category_1_list" type="string"/>
+<Field label="Category 2 [list]" name="Category_2_list" type="string"/>
+<Field label="Category 3 [list]" name="Category_3_list" type="string"/>
+<Field label="Customer Tier [list]" name="Customer_Tier_list" type="string"/>
+<Field label="Customer Type [list]" name="Customer_Type_list" type="string"/>
+<Field label="Community request [list]" name="Community_request_list" type="string"/>
+<Field label="Project ID [txt]" name="Project_ID_txt" type="string"/>
+<Field label="JIRA Issue [txt]" name="JIRA_Issue_txt" type="string"/>
+<Field label="Downtime in minutes [int]" name="Downtime_in_minutes_int" type="number"/>
+<Field label="Performance? [flag]" name="Performance_flag" type="string"/>
+<Field label="Customer? [flag]" name="Customer_flag" type="string"/>
+<Field label="Internal [flag]" name="Internal_flag" type="string"/>
+<Field label="Review? [flag]" name="Review_flag" type="string"/>
+<Field label="Total time spent (sec) [int]" name="Total_time_spent_sec_int" type="number"/>
+<Field eofAsDelimiter="false" label="Time spent last update (sec) [int]" name="Time_spent_last_update_sec_int" type="number"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata18" previewAttachment="./data/source/GDU_Training.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="GDU_Training.csv" name="GDU_Training_Reformat1" previewAttachment="./data/source/GDU_Training.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\r" recordSize="-1" skipSourceRows="1" type="delimited">
+<Field eofAsDelimiter="false" label="total.amount" name="total_amount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="shippingSendSurveyNotificationDays" name="shippingSendSurveyNotificationDays" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="createdById" name="createdById" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="ownerId" name="ownerId" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="modifiedBy.id" name="modifiedBy_id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="modifiedBy.displayName" name="modifiedBy_displayName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="modifiedBy.lastName" name="modifiedBy_lastName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="modifiedBy.email" name="modifiedBy_email" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="modifiedBy.firstName" name="modifiedBy_firstName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="UUID" name="UUID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="purchase.id" name="purchase_id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="purchase.displayName" name="purchase_displayName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="customer.id" name="customer_id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="customer.displayName" name="customer_displayName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="customer.lastName" name="customer_lastName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="customer.email" name="customer_email" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="customer.firstName" name="customer_firstName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="contact.id" name="contact_id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="contact.displayName" name="contact_displayName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="contact.lastName" name="contact_lastName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="contact.email" name="contact_email" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="contact.firstName" name="contact_firstName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="version" name="version" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="shippingDigital" name="shippingDigital" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="id" name="id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="paid" name="paid" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="contactOrganization.id" name="contactOrganization_id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="contactOrganization.displayName" name="contactOrganization_displayName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="contactOrganization.name" name="contactOrganization_name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="ownerOrganization.id" name="ownerOrganization_id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="ownerOrganization.displayName" name="ownerOrganization_displayName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="order.id" name="order_id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="order.displayName" name="order_displayName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" format="MM/dd/yy" label="created" name="created" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" label="targetType" name="targetType" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="orderId" name="orderId" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="options" name="options" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="customerOrganization.id" name="customerOrganization_id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="customerOrganization.displayName" name="customerOrganization_displayName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="status" name="status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="targetId" name="targetId" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="shippingMethod" name="shippingMethod" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="subtotal.symbol" name="subtotal_symbol" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="subtotal.amount" name="subtotal_amount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="subtotal.currency" name="subtotal_currency" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="shippingSendExpiryReminderDays" name="shippingSendExpiryReminderDays" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="orderStatus" name="orderStatus" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="orderTotalAmount" name="orderTotalAmount" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="discount.symbol" name="discount_symbol" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="discount.amount" name="discount_amount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="discount.currency" name="discount_currency" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" format="MM/dd/yy" label="modified" name="modified" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" label="downloadExpiration" name="downloadExpiration" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="modifiedById" name="modifiedById" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="readOnly" name="readOnly" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="price.amount" name="price_amount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="tax.amount" name="tax_amount" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="createdBy.id" name="createdBy_id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="createdBy.displayName" name="createdBy_displayName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="createdBy.lastName" name="createdBy_lastName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="createdBy.email" name="createdBy_email" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="createdBy.firstName" name="createdBy_firstName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="shippingMaxDownloadDays" name="shippingMaxDownloadDays" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="target.id" name="target_id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="target.displayName" name="target_displayName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="sendSurveyNotificationDate" name="sendSurveyNotificationDate" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="owner.id" name="owner_id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="owner.displayName" name="owner_displayName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="owner.lastName" name="owner_lastName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="owner.email" name="owner_email" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="owner.firstName" name="owner_firstName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="displayName" name="displayName" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="sendExpirationReminderDate" name="sendExpirationReminderDate" nullable="true" shift="0" size="0" type="number"/>
+</Record>
+</Metadata>
+<Metadata id="HTTPConnector_Result" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="HTTP_connector_Result" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="content" type="string"/>
+<Field name="outputFilePath" type="string"/>
+<Field name="statusCode" type="integer"/>
+<Field containerType="map" name="header" type="string"/>
+<Field containerType="list" name="rawHeaders" type="string"/>
+<Field name="errorMessage" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata5">
+<Record fieldDelimiter="|" name="recordName" recordDelimiter="\n" type="delimited">
+<Field eofAsDelimiter="false" label="Discount Rule" name="Discount_Rule" nullable="true" shift="0" size="0" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata10">
+<Record fieldDelimiter="|" name="recordName" recordDelimiter="\n" type="delimited">
+<Field eofAsDelimiter="false" label="Coupon ID" name="Coupon_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contact Name" name="Contact_Name" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" format="MM/dd/yyyy hh:mm" label="Course Date" name="Course_Date" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" label="Discount Rule" name="Discount_Rule" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contact Email" name="Contact_Email" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Price" name="Price" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Course Registered" name="Course_Registered" nullable="true" shift="0" size="0" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="recordName1" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="UpdateDate" type="date"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="recordName2" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="Updated" type="long"/>
+<Field name="API" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="recordName3" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="response" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="|" name="recordName4" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\n" type="delimited">
+<Field name="generated_timestamp" type="string"/>
+<Field name="requester_name" type="string"/>
+<Field name="requester_id" type="string"/>
+<Field name="requester_external_id" type="string"/>
+<Field name="requester_email" type="string"/>
+<Field name="requester_domain" type="string"/>
+<Field name="submitter_name" type="string"/>
+<Field name="assignee_name" type="string"/>
+<Field name="group_name" type="string"/>
+<Field name="current_tags" type="string"/>
+<Field name="status" type="string"/>
+<Field name="priority" type="string"/>
+<Field name="via" type="string"/>
+<Field name="ticket_type" type="string"/>
+<Field name="date_created" type="date"/>
+<Field name="date_updated" type="date"/>
+<Field name="date_assigned" type="date"/>
+<Field name="organization_name" type="string"/>
+<Field name="date_initially_assigned" type="date"/>
+<Field name="date_solved" type="date"/>
+<Field name="resolution_time" type="number"/>
+<Field name="satisfaction_score" type="string"/>
+<Field name="group_stations" type="number"/>
+<Field name="assignee_stations" type="number"/>
+<Field name="reopens" type="number"/>
+<Field name="replies" type="number"/>
+<Field name="first_reply_time_in_minutes_within_business_hours" type="number"/>
+<Field name="first_resolution_time_in_minutes" type="number"/>
+<Field name="first_resolution_time_in_minutes_within_business_hours" type="number"/>
+<Field name="full_resolution_time_in_minutes" type="number"/>
+<Field name="full_resolution_time_in_minutes_within_business_hours" type="number"/>
+<Field name="agent_wait_time_in_minutes" type="number"/>
+<Field name="agent_wait_time_in_minutes_within_business_hours" type="number"/>
+<Field name="requester_wait_time_in_minutes" type="number"/>
+<Field name="requester_wait_time_in_minutes_within_business_hours" type="number"/>
+<Field name="on_hold_time_in_minutes" type="number"/>
+<Field name="on_hold_time_in_minutes_within_business_hours" type="number"/>
+<Field name="assignee_id" type="string"/>
+<Field name="assignee_external_id" type="string"/>
+<Field name="group_id" type="string"/>
+<Field name="JIRA_Issue" type="string"/>
+<Field name="Downtime_Minutes" type="string"/>
+<Field name="Template" type="string"/>
+<Field name="Project_ID" type="string"/>
+<Field name="Performance" type="string"/>
+<Field name="Customer" type="string"/>
+<Field name="Internal" type="string"/>
+<Field name="Category_1" type="string"/>
+<Field name="Category_2" type="string"/>
+<Field name="Category_3" type="string"/>
+<Field name="Customer_Tier" type="string"/>
+<Field name="Customer_Type" type="string"/>
+<Field name="Community_Request" type="string"/>
+<Field name="field_20652151" type="string"/>
+<Field name="Time_Spent" type="string"/>
+<Field name="field_24142656" type="string"/>
+<Field name="field_22423247" type="string"/>
+<Field name="Review" type="string"/>
+<Field name="ticket_id" type="string"/>
+<Field name="ticket_json" type="string"/>
+<Field name="subject" type="string"/>
+<Field name="date_due" type="date"/>
+<Field name="first_reply_time_in_minutes" type="number"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata8">
+<Record fieldDelimiter="|" name="recordName5" recordDelimiter="\n" recordSize="-1" type="delimited">
+<Field eofAsDelimiter="false" name="Organization" nullable="true" shift="0" size="0" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata11" previewAttachment="./data/source/GDCSupportTicketData.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="GDCSupportTicketData.csv" name="Ticket_Customer_Reformat_2" previewAttachment="./data/source/GDCSupportTicketData.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\r" recordSize="-1" skipSourceRows="1" type="delimited">
+<Field eofAsDelimiter="false" label="Requester" name="Requester" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Requester email" name="Requester_email" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Organization" name="Organization" nullable="true" shift="0" size="0" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata7" previewAttachment="./data/source/GDCSupportTicketData.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="GDCSupportTicketData.csv" name="Tickets_Reformat1" previewAttachment="./data/source/GDCSupportTicketData.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\r" recordSize="-1" skipSourceRows="1" type="delimited">
+<Field eofAsDelimiter="false" label="Summation column" name="Summation_column" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Id" name="Id" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Requester" name="Requester" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Requester email" name="Requester_email" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Requester domain" name="Requester_domain" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Submitter" name="Submitter" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Assignee" name="Assignee" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Group" name="Group" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Status" name="Status" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Priority" name="Priority" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Via" name="Via" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Ticket type" name="Ticket_type" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" format="MM/dd/yy" label="Created at" name="Created_at" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" format="MM/dd/yy" label="Updated at" name="Updated_at" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" format="MM/dd/yy" label="Assigned at" name="Assigned_at" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" label="Organization" name="Organization" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" format="MM/dd/yy HH:ss" label="Due date" name="Due_date" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" format="MM/dd/yy" label="Initially assigned at" name="Initially_assigned_at" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" format="MM/dd/yy" label="Solved at" name="Solved_at" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" label="Resolution time" name="Resolution_time" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Satisfaction Score" name="Satisfaction_Score" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Group stations" name="Group_stations" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Assignee stations" name="Assignee_stations" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Reopens" name="Reopens" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Replies" name="Replies" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="First reply time in minutes" name="First_reply_time_in_minutes" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="First reply time in minutes within business hours" name="First_reply_time_in_minutes_within_business_hours" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="First resolution time in minutes" name="First_resolution_time_in_minutes" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="First resolution time in minutes within business hours" name="First_resolution_time_in_minutes_within_business_hours" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Full resolution time in minutes" name="Full_resolution_time_in_minutes" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Full resolution time in minutes within business hours" name="Full_resolution_time_in_minutes_within_business_hours" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Agent wait time in minutes" name="Agent_wait_time_in_minutes" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Agent wait time in minutes within business hours" name="Agent_wait_time_in_minutes_within_business_hours" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Requester wait time in minutes" name="Requester_wait_time_in_minutes" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Requester wait time in minutes within business hours" name="Requester_wait_time_in_minutes_within_business_hours" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="On hold time in minutes" name="On_hold_time_in_minutes" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="On hold time in minutes within business hours" name="On_hold_time_in_minutes_within_business_hours" nullable="true" shift="0" size="0" type="number"/>
+<Field eofAsDelimiter="false" label="Template [list]" name="Template_list" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Category 1 [list]" name="Category_1_list" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Category 2 [list]" name="Category_2_list" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Category 3 [list]" name="Category_3_list" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Customer Tier [list]" name="Customer_Tier_list" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Customer Type [list]" name="Customer_Type_list" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Project ID [txt]" name="Project_ID_txt" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="JIRA Issue [txt]" name="JIRA_Issue_txt" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Performance? [flag]" name="Performance_flag" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Customer? [flag]" name="Customer_flag" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Internal [flag]" name="Internal_flag" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Review? [flag]" name="Review_flag" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Total time spent (sec) [int]" name="Total_time_spent_sec_int" nullable="true" shift="0" size="0" type="number"/>
+<Field name="TicketTag_ID" type="string"/>
+<Field name="Tags" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata6" previewAttachment="${DATA_SOURCE_DIR}/GDCSupportTicketData.csv" previewAttachmentCharset="UTF-8">
+<Record fieldDelimiter="," label="GDCSupportTicketData.csv" name="Tickets1" previewAttachment="${DATA_SOURCE_DIR}/GDCSupportTicketData.csv" previewAttachmentCharset="UTF-8" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\r" skipSourceRows="1" type="delimited">
+<Field label="Summation column" name="Summation_column" type="string"/>
+<Field label="Id" name="Id" type="string"/>
+<Field label="Requester" name="Requester" type="string"/>
+<Field label="Requester id" name="Requester_id" type="string"/>
+<Field label="Requester external id" name="Requester_external_id" type="string"/>
+<Field label="Requester email" name="Requester_email" type="string"/>
+<Field label="Requester domain" name="Requester_domain" type="string"/>
+<Field label="Submitter" name="Submitter" type="string"/>
+<Field label="Assignee" name="Assignee" type="string"/>
+<Field label="Group" name="Group" type="string"/>
+<Field label="Subject" name="Subject" type="string"/>
+<Field label="Tags" name="Tags" type="string"/>
+<Field label="Status" name="Status" type="string"/>
+<Field label="Priority" name="Priority" type="string"/>
+<Field label="Via" name="Via" type="string"/>
+<Field label="Ticket type" name="Ticket_type" type="string"/>
+<Field format="MM/dd/yy" label="Created at" name="Created_at" type="date"/>
+<Field format="MM/dd/yy" label="Updated at" name="Updated_at" type="date"/>
+<Field format="MM/dd/yy" label="Assigned at" name="Assigned_at" type="date"/>
+<Field label="Organization" name="Organization" type="string"/>
+<Field format="MM/dd/yy HH:ss" label="Due date" name="Due_date" type="date"/>
+<Field format="MM/dd/yy" label="Initially assigned at" name="Initially_assigned_at" type="date"/>
+<Field format="MM/dd/yy" label="Solved at" name="Solved_at" type="date"/>
+<Field label="Resolution time" name="Resolution_time" type="number"/>
+<Field label="Satisfaction Score" name="Satisfaction_Score" type="string"/>
+<Field label="Group stations" name="Group_stations" type="number"/>
+<Field label="Assignee stations" name="Assignee_stations" type="number"/>
+<Field label="Reopens" name="Reopens" type="number"/>
+<Field label="Replies" name="Replies" type="number"/>
+<Field label="First reply time in minutes" name="First_reply_time_in_minutes" type="number"/>
+<Field label="First reply time in minutes within business hours" name="First_reply_time_in_minutes_within_business_hours" type="number"/>
+<Field label="First resolution time in minutes" name="First_resolution_time_in_minutes" type="number"/>
+<Field label="First resolution time in minutes within business hours" name="First_resolution_time_in_minutes_within_business_hours" type="number"/>
+<Field label="Full resolution time in minutes" name="Full_resolution_time_in_minutes" type="number"/>
+<Field label="Full resolution time in minutes within business hours" name="Full_resolution_time_in_minutes_within_business_hours" type="number"/>
+<Field label="Agent wait time in minutes" name="Agent_wait_time_in_minutes" type="number"/>
+<Field label="Agent wait time in minutes within business hours" name="Agent_wait_time_in_minutes_within_business_hours" type="number"/>
+<Field label="Requester wait time in minutes" name="Requester_wait_time_in_minutes" type="number"/>
+<Field label="Requester wait time in minutes within business hours" name="Requester_wait_time_in_minutes_within_business_hours" type="number"/>
+<Field label="On hold time in minutes" name="On_hold_time_in_minutes" type="number"/>
+<Field label="On hold time in minutes within business hours" name="On_hold_time_in_minutes_within_business_hours" type="number"/>
+<Field label="Template [list]" name="Template_list" type="string"/>
+<Field label="Category 1 [list]" name="Category_1_list" type="string"/>
+<Field label="Category 2 [list]" name="Category_2_list" type="string"/>
+<Field label="Category 3 [list]" name="Category_3_list" type="string"/>
+<Field label="Customer Tier [list]" name="Customer_Tier_list" type="string"/>
+<Field label="Customer Type [list]" name="Customer_Type_list" type="string"/>
+<Field label="Community request [list]" name="Community_request_list" type="string"/>
+<Field label="Project ID [txt]" name="Project_ID_txt" type="string"/>
+<Field label="JIRA Issue [txt]" name="JIRA_Issue_txt" type="string"/>
+<Field label="Downtime in minutes [int]" name="Downtime_in_minutes_int" type="number"/>
+<Field label="Performance? [flag]" name="Performance_flag" type="string"/>
+<Field label="Customer? [flag]" name="Customer_flag" type="string"/>
+<Field label="Internal [flag]" name="Internal_flag" type="string"/>
+<Field label="Review? [flag]" name="Review_flag" type="string"/>
+<Field label="Total time spent (sec) [int]" name="Total_time_spent_sec_int" type="number"/>
+<Field eofAsDelimiter="false" label="Time spent last update (sec) [int]" name="Time_spent_last_update_sec_int" type="number"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata9" previewAttachment="${DATA_SOURCE_DIR}/discount_uses 2.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="discount_uses 2.csv" name="Training_1" previewAttachment="${DATA_SOURCE_DIR}/discount_uses 2.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\r" skipSourceRows="1" type="delimited">
+<Field label="Coupon ID" name="Coupon_ID" type="string"/>
+<Field label="Discount Rule" name="Discount_Rule" type="string"/>
+<Field label="Coupon Code" name="Coupon_Code" type="string"/>
+<Field label="Contact Name" name="Contact_Name" type="string"/>
+<Field label="Contact Email" name="Contact_Email" type="string"/>
+<Field label="Course Registered" name="Course_Registered" type="string"/>
+<Field format="M/d/yy HH:mm" label="Course Date" name="Course_Date" type="date"/>
+<Field eofAsDelimiter="false" label="Price" name="Price" type="number"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata12" previewAttachment="./data/source/discount_uses 2.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="discount_uses 2.csv" name="Training_2" previewAttachment="./data/source/discount_uses 2.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\r" recordSize="-1" skipSourceRows="1" type="delimited">
+<Field eofAsDelimiter="false" label="Coupon ID" name="Coupon_ID" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Discount Rule" name="Discount_Rule" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Coupon Code" name="Coupon_Code" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Contact Email" name="Contact_Email" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" label="Course Registered" name="Course_Registered" nullable="true" shift="0" size="0" type="string"/>
+<Field eofAsDelimiter="false" format="M/d/yy HH:mm" label="Course Date" name="Course_Date" nullable="true" shift="0" size="0" type="date"/>
+<Field eofAsDelimiter="false" label="Price" name="Price" nullable="true" shift="0" size="0" type="number"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="224" enabled="true" folded="false" height="134" id="Note0" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="Training" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="824" x="103" y="30"/>
+<Note alignment="1" backgroundColorB="238" backgroundColorG="44" backgroundColorR="145" enabled="true" folded="false" height="289" id="Note3" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="Customers" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="1104" x="-13" y="362"/>
+<Note alignment="1" backgroundColorB="222" backgroundColorG="196" backgroundColorR="176" enabled="false" folded="false" height="131" id="Note4" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="Tickets - only run once" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="726" x="152" y="-113">
+<attr name="text"><![CDATA[ 
+]]></attr>
+</Note>
+<Note alignment="1" backgroundColorB="210" backgroundColorG="34" backgroundColorR="81" enabled="true" folded="false" height="177" id="Note2" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="Tickets - API" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="1068" x="1" y="175"/>
+<Note alignment="1" backgroundColorB="250" backgroundColorG="230" backgroundColorR="230" enabled="true" folded="false" height="58" id="Note1" textColorB="0" textColorG="0" textColorR="0" textFontSize="12" title="Note" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="14" width="229" x="815" y="569">
+<attr name="text"><![CDATA[This runs hourly incremental loads
+]]></attr>
+</Note>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node charset="ISO-8859-15" dataPolicy="lenient" enabled="disabled" fileURL="/Users/nicolegibson/Desktop/GD_Tickets.csv" guiName="Tickets Reader" guiX="217" guiY="-92" id="TICKETS_READER1" skipLeadingBlanks="true" skipTrailingBlanks="true" type="DATA_READER"/>
+<Node dataset="dataset.zendesktickets" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.zendesktickets&quot;,&quot;datasetTitle&quot;:&quot;Tickets&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.assignee&quot;,&quot;title&quot;:&quot;Assignee&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_assignee&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.assignee&quot;,&quot;title&quot;:&quot;Assignee&quot;,&quot;prettyId&quot;:&quot;assignee&quot;,&quot;assignedMetadataField&quot;:&quot;Assignee&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.assignee&quot;,&quot;title&quot;:&quot;Assignee&quot;,&quot;prettyId&quot;:&quot;assignee&quot;,&quot;assignedMetadataField&quot;:&quot;Assignee&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.category1&quot;,&quot;title&quot;:&quot;Category 1&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_category1&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.category1&quot;,&quot;title&quot;:&quot;Category 1&quot;,&quot;prettyId&quot;:&quot;category1&quot;,&quot;assignedMetadataField&quot;:&quot;Category_1_list&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.category2&quot;,&quot;title&quot;:&quot;Category 2&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_category2&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.category2&quot;,&quot;title&quot;:&quot;Category 2&quot;,&quot;prettyId&quot;:&quot;category2&quot;,&quot;assignedMetadataField&quot;:&quot;Category_2_list&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.category3&quot;,&quot;title&quot;:&quot;Category 3&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_category3&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.category3&quot;,&quot;title&quot;:&quot;Category 3&quot;,&quot;prettyId&quot;:&quot;category3&quot;,&quot;assignedMetadataField&quot;:&quot;Category_3_list&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.customer&quot;,&quot;title&quot;:&quot;customer?&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_customer&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.customer&quot;,&quot;title&quot;:&quot;customer?&quot;,&quot;prettyId&quot;:&quot;customer&quot;,&quot;assignedMetadataField&quot;:&quot;Customer_flag&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.customer&quot;,&quot;title&quot;:&quot;customer?&quot;,&quot;prettyId&quot;:&quot;customer&quot;,&quot;assignedMetadataField&quot;:&quot;Customer_flag&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.customertier&quot;,&quot;title&quot;:&quot;Customer Tier&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_customertier&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.customertier&quot;,&quot;title&quot;:&quot;Customer Tier&quot;,&quot;prettyId&quot;:&quot;customertier&quot;,&quot;assignedMetadataField&quot;:&quot;Customer_Tier_list&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.customertype&quot;,&quot;title&quot;:&quot;Customer Type&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_customertype&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.customertype&quot;,&quot;title&quot;:&quot;Customer Type&quot;,&quot;prettyId&quot;:&quot;customertype&quot;,&quot;assignedMetadataField&quot;:&quot;Customer_Type_list&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.group&quot;,&quot;title&quot;:&quot;Group&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_group&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.group&quot;,&quot;title&quot;:&quot;Group&quot;,&quot;prettyId&quot;:&quot;group&quot;,&quot;assignedMetadataField&quot;:&quot;Group&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.group&quot;,&quot;title&quot;:&quot;Group&quot;,&quot;prettyId&quot;:&quot;group&quot;,&quot;assignedMetadataField&quot;:&quot;Group&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.internal&quot;,&quot;title&quot;:&quot;Internal&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_internal&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.internal&quot;,&quot;title&quot;:&quot;Internal&quot;,&quot;prettyId&quot;:&quot;internal&quot;,&quot;assignedMetadataField&quot;:&quot;Internal_flag&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.internal&quot;,&quot;title&quot;:&quot;Internal&quot;,&quot;prettyId&quot;:&quot;internal&quot;,&quot;assignedMetadataField&quot;:&quot;Internal_flag&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.jiraissue&quot;,&quot;title&quot;:&quot;JIRA Issue&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_jiraissue&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.jiraissue&quot;,&quot;title&quot;:&quot;JIRA Issue&quot;,&quot;prettyId&quot;:&quot;jiraissue&quot;,&quot;assignedMetadataField&quot;:&quot;JIRA_Issue_txt&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.performance&quot;,&quot;title&quot;:&quot;Performance?&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_performance&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.performance&quot;,&quot;title&quot;:&quot;Performance?&quot;,&quot;prettyId&quot;:&quot;performance&quot;,&quot;assignedMetadataField&quot;:&quot;Performance_flag&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.performance&quot;,&quot;title&quot;:&quot;Performance?&quot;,&quot;prettyId&quot;:&quot;performance&quot;,&quot;assignedMetadataField&quot;:&quot;Performance_flag&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.priority&quot;,&quot;title&quot;:&quot;Priority&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_priority&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.priority&quot;,&quot;title&quot;:&quot;Priority&quot;,&quot;prettyId&quot;:&quot;priority&quot;,&quot;assignedMetadataField&quot;:&quot;Priority&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.priority&quot;,&quot;title&quot;:&quot;Priority&quot;,&quot;prettyId&quot;:&quot;priority&quot;,&quot;assignedMetadataField&quot;:&quot;Priority&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.projectid&quot;,&quot;title&quot;:&quot;Project ID&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_projectid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.projectid&quot;,&quot;title&quot;:&quot;Project ID&quot;,&quot;prettyId&quot;:&quot;projectid&quot;,&quot;assignedMetadataField&quot;:&quot;Project_ID_txt&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.requesterdomain&quot;,&quot;title&quot;:&quot;Requester Domain&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_requesterdomain&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.requesterdomain&quot;,&quot;title&quot;:&quot;Requester Domain&quot;,&quot;prettyId&quot;:&quot;requesterdomain&quot;,&quot;assignedMetadataField&quot;:&quot;Requester_domain&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.requesteremail&quot;,&quot;title&quot;:&quot;Requester Email&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_requesteremail&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.requesteremail&quot;,&quot;title&quot;:&quot;Requester Email&quot;,&quot;prettyId&quot;:&quot;requesteremail&quot;,&quot;assignedMetadataField&quot;:&quot;Requester_email&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.requestername&quot;,&quot;title&quot;:&quot;Requester Name&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_requestername&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.requestername&quot;,&quot;title&quot;:&quot;Requester Name&quot;,&quot;prettyId&quot;:&quot;requestername&quot;,&quot;assignedMetadataField&quot;:&quot;Requester&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.review&quot;,&quot;title&quot;:&quot;Review?&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_review&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.review&quot;,&quot;title&quot;:&quot;Review?&quot;,&quot;prettyId&quot;:&quot;review&quot;,&quot;assignedMetadataField&quot;:&quot;Review_flag&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.review&quot;,&quot;title&quot;:&quot;Review?&quot;,&quot;prettyId&quot;:&quot;review&quot;,&quot;assignedMetadataField&quot;:&quot;Review_flag&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.status&quot;,&quot;title&quot;:&quot;Status&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_status&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.status&quot;,&quot;title&quot;:&quot;Status&quot;,&quot;prettyId&quot;:&quot;status&quot;,&quot;assignedMetadataField&quot;:&quot;Status&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.status&quot;,&quot;title&quot;:&quot;Status&quot;,&quot;prettyId&quot;:&quot;status&quot;,&quot;assignedMetadataField&quot;:&quot;Status&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.submitter&quot;,&quot;title&quot;:&quot;Submitter&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_submitter&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.submitter&quot;,&quot;title&quot;:&quot;Submitter&quot;,&quot;prettyId&quot;:&quot;submitter&quot;,&quot;assignedMetadataField&quot;:&quot;Submitter&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.submitter&quot;,&quot;title&quot;:&quot;Submitter&quot;,&quot;prettyId&quot;:&quot;submitter&quot;,&quot;assignedMetadataField&quot;:&quot;Submitter&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.template&quot;,&quot;title&quot;:&quot;Template&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_template&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.template&quot;,&quot;title&quot;:&quot;Template&quot;,&quot;prettyId&quot;:&quot;template&quot;,&quot;assignedMetadataField&quot;:&quot;Template_list&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.template&quot;,&quot;title&quot;:&quot;Template&quot;,&quot;prettyId&quot;:&quot;template&quot;,&quot;assignedMetadataField&quot;:&quot;Template_list&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.ticketid&quot;,&quot;title&quot;:&quot;Ticket ID&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_ticketid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.ticketid&quot;,&quot;title&quot;:&quot;Ticket ID&quot;,&quot;prettyId&quot;:&quot;ticketid&quot;,&quot;assignedMetadataField&quot;:&quot;Id&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.tickettype&quot;,&quot;title&quot;:&quot;Ticket Type&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_tickettype&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.tickettype&quot;,&quot;title&quot;:&quot;Ticket Type&quot;,&quot;prettyId&quot;:&quot;tickettype&quot;,&quot;assignedMetadataField&quot;:&quot;Ticket_type&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.via&quot;,&quot;title&quot;:&quot;Via&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_via&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.via&quot;,&quot;title&quot;:&quot;Via&quot;,&quot;prettyId&quot;:&quot;via&quot;,&quot;assignedMetadataField&quot;:&quot;Via&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.via&quot;,&quot;title&quot;:&quot;Via&quot;,&quot;prettyId&quot;:&quot;via&quot;,&quot;assignedMetadataField&quot;:&quot;Via&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customers.organization&quot;,&quot;title&quot;:&quot;Organization&quot;,&quot;prettyId&quot;:&quot;attr_customers_organization&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customers.organization&quot;,&quot;title&quot;:&quot;Organization&quot;,&quot;prettyId&quot;:&quot;customers__organization&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;Organization&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customers.organization&quot;,&quot;title&quot;:&quot;Organization&quot;,&quot;prettyId&quot;:&quot;customers__organization&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;assigneeupdated.date&quot;,&quot;title&quot;:&quot;Date (Ticket Initially Assigned)&quot;,&quot;prettyId&quot;:&quot;assigneeupdated&quot;,&quot;assignedMetadataField&quot;:&quot;Initially_assigned_at&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;assigneeupdated.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Initially Assigned)&quot;,&quot;prettyId&quot;:&quot;assigneeupdated_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;assigneeupdated.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Initially Assigned)&quot;,&quot;prettyId&quot;:&quot;assigneeupdated_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;ticketassigned.date&quot;,&quot;title&quot;:&quot;Date (Ticket Assigned)&quot;,&quot;prettyId&quot;:&quot;ticketassigned&quot;,&quot;assignedMetadataField&quot;:&quot;Assigned_at&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketassigned.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Assigned)&quot;,&quot;prettyId&quot;:&quot;ticketassigned_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketassigned.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Assigned)&quot;,&quot;prettyId&quot;:&quot;ticketassigned_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;ticketcreated.date&quot;,&quot;title&quot;:&quot;Date (Ticket Created)&quot;,&quot;prettyId&quot;:&quot;ticketcreated&quot;,&quot;assignedMetadataField&quot;:&quot;Created_at&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketcreated.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Created)&quot;,&quot;prettyId&quot;:&quot;ticketcreated_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketcreated.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Created)&quot;,&quot;prettyId&quot;:&quot;ticketcreated_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;ticketdue.date&quot;,&quot;title&quot;:&quot;Date (Ticket Due)&quot;,&quot;prettyId&quot;:&quot;ticketdue&quot;,&quot;assignedMetadataField&quot;:&quot;Due_date&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketdue.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Due)&quot;,&quot;prettyId&quot;:&quot;ticketdue_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketdue.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Due)&quot;,&quot;prettyId&quot;:&quot;ticketdue_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;ticketlastupdated.date&quot;,&quot;title&quot;:&quot;Date (Ticket Last Updated)&quot;,&quot;prettyId&quot;:&quot;ticketlastupdated&quot;,&quot;assignedMetadataField&quot;:&quot;Updated_at&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketlastupdated.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Last Updated)&quot;,&quot;prettyId&quot;:&quot;ticketlastupdated_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketlastupdated.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Last Updated)&quot;,&quot;prettyId&quot;:&quot;ticketlastupdated_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;ticketsolve.date&quot;,&quot;title&quot;:&quot;Date (Ticket Solved)&quot;,&quot;prettyId&quot;:&quot;ticketsolve&quot;,&quot;assignedMetadataField&quot;:&quot;Solved_at&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketsolve.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Solved)&quot;,&quot;prettyId&quot;:&quot;ticketsolve_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketsolve.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Solved)&quot;,&quot;prettyId&quot;:&quot;ticketsolve_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}}],&quot;simpleFacts&quot;:[{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.agentwaittimeinminutes&quot;,&quot;title&quot;:&quot;Agent wait time in minutes&quot;,&quot;prettyId&quot;:&quot;agentwaittimeinminutes&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Agent_wait_time_in_minutes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.agentwaittimeinminuteswith&quot;,&quot;title&quot;:&quot;Agent wait time in minutes within business hours&quot;,&quot;prettyId&quot;:&quot;agentwaittimeinminuteswith&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Agent_wait_time_in_minutes_within_business_hours&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.assigneestations&quot;,&quot;title&quot;:&quot;Assignee stations&quot;,&quot;prettyId&quot;:&quot;assigneestations&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Assignee_stations&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.firstreplytimeinminutes&quot;,&quot;title&quot;:&quot;First reply time in minutes&quot;,&quot;prettyId&quot;:&quot;firstreplytimeinminutes&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;First_reply_time_in_minutes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.firstreplytimeinminuteswit&quot;,&quot;title&quot;:&quot;First reply time in minutes within business hours&quot;,&quot;prettyId&quot;:&quot;firstreplytimeinminuteswit&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;First_reply_time_in_minutes_within_business_hours&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.firstresolutiontimeinminut&quot;,&quot;title&quot;:&quot;First resolution time in minutes&quot;,&quot;prettyId&quot;:&quot;firstresolutiontimeinminut&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;First_resolution_time_in_minutes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.firstresolutiontimeinminut1&quot;,&quot;title&quot;:&quot;First resolution time in minutes within business hours&quot;,&quot;prettyId&quot;:&quot;firstresolutiontimeinminut1&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;First_resolution_time_in_minutes_within_business_hours&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.fullresolutiontimeinminute&quot;,&quot;title&quot;:&quot;Full resolution time in minutes&quot;,&quot;prettyId&quot;:&quot;fullresolutiontimeinminute&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Full_resolution_time_in_minutes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.fullresolutiontimeinminute1&quot;,&quot;title&quot;:&quot;Full resolution time in minutes within business hours&quot;,&quot;prettyId&quot;:&quot;fullresolutiontimeinminute1&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Full_resolution_time_in_minutes_within_business_hours&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.groupstations&quot;,&quot;title&quot;:&quot;Group stations&quot;,&quot;prettyId&quot;:&quot;groupstations&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Group_stations&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.ticketonholdinminutes&quot;,&quot;title&quot;:&quot;On hold time in minutes&quot;,&quot;prettyId&quot;:&quot;ticketonholdinminutes&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;On_hold_time_in_minutes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.ticketonholdinminuteswithinbusinesshours&quot;,&quot;title&quot;:&quot;On hold time in minutes within business hours&quot;,&quot;prettyId&quot;:&quot;ticketonholdinminuteswithinbusinesshours&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;On_hold_time_in_minutes_within_business_hours&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.requesterwaittimeinminutes&quot;,&quot;title&quot;:&quot;Requester wait time in minutes&quot;,&quot;prettyId&quot;:&quot;requesterwaittimeinminutes&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Requester_wait_time_in_minutes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.requesterwaittimeinminutes1&quot;,&quot;title&quot;:&quot;Requester wait time in minutes within business hours&quot;,&quot;prettyId&quot;:&quot;requesterwaittimeinminutes1&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Requester_wait_time_in_minutes_within_business_hours&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.resolutiontime&quot;,&quot;title&quot;:&quot;Resolution time&quot;,&quot;prettyId&quot;:&quot;resolutiontime&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Resolution_time&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.satisfactionscore&quot;,&quot;title&quot;:&quot;Satisfaction Score&quot;,&quot;prettyId&quot;:&quot;satisfactionscore&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Satisfaction_Score&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.reopens&quot;,&quot;title&quot;:&quot;Ticket reopens&quot;,&quot;prettyId&quot;:&quot;reopens&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Reopens&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.replies&quot;,&quot;title&quot;:&quot;Ticket replies&quot;,&quot;prettyId&quot;:&quot;replies&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Replies&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.totaltimespentsec&quot;,&quot;title&quot;:&quot;Total time spent (sec)&quot;,&quot;prettyId&quot;:&quot;totaltimespentsec&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Total_time_spent_sec_int&quot;}}],&quot;dateFacts&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[]}}" enabled="disabled" guiName="Tickets Writer" guiX="688" guiY="-86" id="TICKETS_WRITER" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Edge debugMode="true" fromNode="TICKETS_READER1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (output)" toNode="TICKETS_WRITER:0"/>
+</Phase>
+<Phase number="10">
+<Node enabled="enabled" guiName="Reformat" guiX="460" guiY="64" id="REFORMAT4" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.Coupon_ID = $in.0.Coupon_ID;
+	$out.0.Discount_Rule = $in.0.Discount_Rule;
+	$out.0.Coupon_Code = $in.0.Coupon_Code;
+	$out.0.Contact_Email = $in.0.Contact_Email;
+	$out.0.Course_Registered = $in.0.Course_Registered;
+	$out.0.Course_Date = $in.0.Course_Date;
+	$out.0.Price = $in.0.Price;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node dataset="dataset.training" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.training&quot;,&quot;datasetTitle&quot;:&quot;Training&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.training.contactemail&quot;,&quot;title&quot;:&quot;Training Email&quot;,&quot;prettyId&quot;:&quot;attr_training_contactemail&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.training.contactemail&quot;,&quot;title&quot;:&quot;Training Email&quot;,&quot;prettyId&quot;:&quot;contactemail&quot;,&quot;assignedMetadataField&quot;:&quot;Contact_Email&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.training.couponcode&quot;,&quot;title&quot;:&quot;Coupon Code&quot;,&quot;prettyId&quot;:&quot;attr_training_couponcode&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.training.couponcode&quot;,&quot;title&quot;:&quot;Coupon Code&quot;,&quot;prettyId&quot;:&quot;couponcode&quot;,&quot;assignedMetadataField&quot;:&quot;Coupon_Code&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.training.couponid&quot;,&quot;title&quot;:&quot;Coupon ID&quot;,&quot;prettyId&quot;:&quot;attr_training_couponid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.training.couponid&quot;,&quot;title&quot;:&quot;Coupon ID&quot;,&quot;prettyId&quot;:&quot;couponid&quot;,&quot;assignedMetadataField&quot;:&quot;Coupon_ID&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.training.courseregistered&quot;,&quot;title&quot;:&quot;Course Name&quot;,&quot;prettyId&quot;:&quot;attr_training_courseregistered&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.training.courseregistered&quot;,&quot;title&quot;:&quot;Course Name&quot;,&quot;prettyId&quot;:&quot;courseregistered&quot;,&quot;assignedMetadataField&quot;:&quot;Course_Registered&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customers.organization&quot;,&quot;title&quot;:&quot;Organization&quot;,&quot;prettyId&quot;:&quot;attr_customers_organization&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customers.organization&quot;,&quot;title&quot;:&quot;Organization&quot;,&quot;prettyId&quot;:&quot;customers__organization&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;Discount_Rule&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customers.organization&quot;,&quot;title&quot;:&quot;Organization&quot;,&quot;prettyId&quot;:&quot;customers__organization&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;course.date&quot;,&quot;title&quot;:&quot;Date (Course)&quot;,&quot;prettyId&quot;:&quot;course&quot;,&quot;assignedMetadataField&quot;:&quot;Course_Date&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;course.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Course)&quot;,&quot;prettyId&quot;:&quot;course_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;course.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Course)&quot;,&quot;prettyId&quot;:&quot;course_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}}],&quot;simpleFacts&quot;:[{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.training.courseprice&quot;,&quot;title&quot;:&quot;Course Price&quot;,&quot;prettyId&quot;:&quot;courseprice&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Price&quot;}}],&quot;dateFacts&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;unassigneddateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;datesWithFactConflict&quot;:[]}}" enabled="enabled" guiName="Training GD Writer" guiX="742" guiY="64" id="TRAINING_GD_WRITER" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node charset="ISO-8859-15" enabled="enabled" fileURL="${DATA_SOURCE_DIR}/discount_uses_July_10_2015.csv" guiName="Training Reader" guiX="130" guiY="64" id="TRAINING_READER" type="DATA_READER"/>
+<Edge debugMode="true" fromNode="REFORMAT4:0" guiBendpoints="" guiRouter="Manhattan" id="Edge40" inPort="Port 0 (in)" metadata="Metadata12" outPort="Port 0 (out)" toNode="TRAINING_GD_WRITER:0"/>
+<Edge debugMode="true" fromNode="TRAINING_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge38" inPort="Port 0 (in)" metadata="Metadata9" outPort="Port 0 (output)" toNode="REFORMAT4:0"/>
+</Phase>
+<Phase number="20">
+<Node enabled="enabled" guiName="Data Load Timestamp Generator" guiX="18" guiY="231" id="DATA_LOAD_TIMESTAMP_GENERATOR" recordsNumber="1" type="DATA_GENERATOR">
+<attr name="generate"><![CDATA[//#CTL2
+
+// Generates output record.
+function integer generate() {
+
+	$out.0.UpdateDate = dateAdd(today(),-2,day);
+	
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the generate. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if generate() throws an exception.
+// function integer generateOnError(string errorMessage, string stackTrace) {
+// }
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Date to String Reformat" guiX="255" guiY="231" id="DATE_TO_STRING_REFORMAT" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	
+	$out.0.Updated = date2long($in.0.UpdateDate) / 1000;
+	// epoch milliseconds
+
+	$out.0.API = "https://gooddata.zendesk.com/api/v2/exports/tickets.json?start_time="+$out.0.Updated;
+	// https://gooddata.zendesk.com/api/v2/exports/tickets.json?start_time=135334352
+
+
+	
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="HTTP connector" guiX="444" guiY="231" id="HTTP_CONNECTOR" password="${PW}" type="HTTP_CONNECTOR" username="${USERNAME}">
+<attr name="inputMapping"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.URL = $in.0.API;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="port:$0.response:discrete" guiName="JSONReader" guiX="599" guiY="231" id="JSONREADER" type="JSON_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- =========================== Context ================================ -->
+<!-- Context element sets the "current node" in the JSON tree             --> 
+<!-- for subsequent Mapping (or Context) operations.                      -->
+<!--                                                                      -->
+<!-- Parameters:                                                          -->
+<!--   xpath: position in the JSON tree                                   -->
+<!--   outPort: (optional) routes mapped data to specified output port    -->
+<!--                                                                      -->
+<!-- Valid "xpath" for root context:                                      -->
+<!--   xpath="/root/object"  if root of JSON structure is an object       -->
+<!--   xpath="/root/array"   if root of JSON structure is an array        -->
+  
+<Context xpath="/root/object" outPort="0">
+  
+  <!-- =========================== Mapping ================================ -->
+  <!-- Mapping elements extract data from single JSON name/value pair       -->
+  <!-- in the current node or its subtree.                                  --> 
+  <!--                                                                      -->
+  <!-- Parameters:                                                          -->
+  <!--   xpath: extract value of a name/value pair for a specified name     -->
+  <!--                                                                      -->
+                                                              
+<Context xpath="results" outPort="0">
+  	<Mapping cloverField="generated_timestamp" xpath="generated_x005ftimestamp"/>
+	   <Mapping cloverField="requester_name" xpath="req_x005fname"/>
+	   <Mapping cloverField="requester_id" xpath="req_x005fid"/>
+	   <Mapping cloverField="requester_external_id" xpath="req_x005fexternal_x005fid"/>
+	   <Mapping cloverField="requester_email" xpath="req_x005femail"/>
+	   <Mapping cloverField="requester_domain" xpath="domain"/>
+	   <Mapping cloverField="submitter_name" xpath="submitter_x005fname"/>
+	   <Mapping cloverField="assignee_name" xpath="assignee_x005fname"/>
+	   <Mapping cloverField="group_name" xpath="group_x005fname"/>
+	   <Mapping cloverField="subject" xpath="subject"/>
+	   <Mapping cloverField="current_tags" xpath="current_x005ftags"/>  
+	   <Mapping cloverField="status" xpath="status"/>
+	   <Mapping cloverField="priority" xpath="priority"/>
+	   <Mapping cloverField="via" xpath="via"/>
+	   <Mapping cloverField="ticket_type" xpath="ticket_x005ftype"/>
+	   <Mapping cloverField="date_created" xpath="created_x005fat"/>
+	   <Mapping cloverField="date_updated" xpath="updated_x005fat"/>
+	   <Mapping cloverField="date_assigned" xpath="assigned_x005fat"/>
+	   <Mapping cloverField="organization_name" xpath="organization_x005fname"/>
+	   <Mapping cloverField="date_due" xpath="due_x005fdate"/>
+	   <Mapping cloverField="date_initially_assigned" xpath="initially_x005fassigned_x005fat"/>
+	   <Mapping cloverField="date_solved" xpath="solved_x005fat"/>  
+	   <Mapping cloverField="resolution_time" xpath="resolution_x005ftime"/>
+	   <Mapping cloverField="satisfaction_score" xpath="satisfaction_x005fscore"/>
+	   <Mapping cloverField="group_stations" xpath="group_x005fstations"/>
+	   <Mapping cloverField="assignee_stations" xpath="assignee_x005fstations"/>
+	   <Mapping cloverField="reopens" xpath="reopens"/>
+	   <Mapping cloverField="replies" xpath="replies"/>
+	   <Mapping cloverField="first_reply_time_in_minutes" xpath="first_x005freply_x005ftime_x005fin_x005fminutes"/>
+	   <Mapping cloverField="first_reply_time_in_minutes_within_business_hours" xpath="first_x005freply_x005ftime_x005fin_x005fminutes_x005fwithin_x005fbusiness_x005fhours"/>
+	   <Mapping cloverField="first_resolution_time_in_minutes" xpath="first_x005fresolution_x005ftime_x005fin_x005fminutes"/>
+	   <Mapping cloverField="first_resolution_time_in_minutes_within_business_hours" xpath="first_x005fresolution_x005ftime_x005fin_x005fminutes_x005fwithin_x005fbusiness_x005fhours"/>
+	   <Mapping cloverField="full_resolution_time_in_minutes" xpath="full_x005fresolution_x005ftime_x005fin_x005fminutes"/>   
+	   <Mapping cloverField="full_resolution_time_in_minutes_within_business_hours" xpath="full_x005fresolution_x005ftime_x005fin_x005fminutes_x005fwithin_x005fbusiness_x005fhours"/>
+	   <Mapping cloverField="agent_wait_time_in_minutes" xpath="agent_x005fx005fwait_x005ftime_x005fin_x005fminutes"/>
+	   <Mapping cloverField="agent_wait_time_in_minutes_within_business_hours" xpath="agent_x005fwait_x005ftime_x005fin_x005fminutes_x005fwithin_x005fbusiness_x005fhours"/>
+	   <Mapping cloverField="requester_wait_time_in_minutes" xpath="requester_x005fwait_x005ftime_x005fin_x005fminutes"/>
+	   <Mapping cloverField="requester_wait_time_in_minutes_within_business_hours" xpath="requester_x005fwait_x005ftime_x005fin_x005fminutes_x005fwithin_x005fbusiness_x005fhours"/>
+	   <Mapping cloverField="on_hold_time_in_minutes" xpath="on_x005fhold_x005ftime_x005fin_x005fminutes"/>
+	   <Mapping cloverField="on_hold_time_in_minutes_within_business_hours" xpath="on_x005fhold_x005ftime_x005fin_x005fminutes_x005fwithin_x005fbusiness_x005fhours"/>
+	   <Mapping cloverField="assignee_id" xpath="assignee_x005fid"/>
+	   <Mapping cloverField="assignee_external_id" xpath="assignee_x005fexternal_x005fid"/>
+	   <Mapping cloverField="group_id" xpath="group_x005fid"/>
+	   <Mapping cloverField="JIRA_Issue" xpath="field_x005f20243947"/>   
+	   <Mapping cloverField="Downtime_Minutes" xpath="field_x005f20282591"/>
+	   <Mapping cloverField="Template" xpath="field_x005f20311933"/>
+	   <Mapping cloverField="Project_ID" xpath="field_x005f20403086"/>
+	   <Mapping cloverField="Performance" xpath="field_x005f20503621"/>
+	   <Mapping cloverField="Customer" xpath="field_x005f20608007"/>
+	   <Mapping cloverField="Internal" xpath="field_x005f20651803"/>
+	   <Mapping cloverField="Category_1" xpath="field_x005f22234797"/>
+	   <Mapping cloverField="Category_2" xpath="field_x005f22234881"/>
+	   <Mapping cloverField="Category_3" xpath="field_x005f22241218"/>   
+	   <Mapping cloverField="Customer_Tier" xpath="field_x005f21477832"/>
+	   <Mapping cloverField="Customer_Type" xpath="field_x005f22502112"/>
+	   <Mapping cloverField="Community_Request" xpath="field_x005f23989586"/>
+	   <Mapping cloverField="organization_name" xpath="organization_x005fname"/>
+	   <Mapping cloverField="field_20652151" xpath="field_x005f20652151"/>
+       <Mapping cloverField="Time_Spent" xpath="field_x005f24142646"/>
+       <Mapping cloverField="field_24142656" xpath="field_x005f24142656"/>
+       <Mapping cloverField="field_22423247" xpath="field_x005f22423247"/>
+       <Mapping cloverField="Review" xpath="field_x005f22423247"/>
+	   <Mapping cloverField="ticket_id" xpath="id"/>
+	   <Mapping cloverField="ticket_json" xpath="url"/>
+  
+    </Context>
+</Context>
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Reformat" guiX="241" guiY="376" id="REFORMAT2" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.Organization = $in.0.organization_name;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="SimpleCopy" guiX="763" guiY="231" id="SIMPLE_COPY" type="SIMPLE_COPY"/>
+<Node dataset="dataset.zendesktickets" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.zendesktickets&quot;,&quot;datasetTitle&quot;:&quot;Tickets&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.assignee&quot;,&quot;title&quot;:&quot;Assignee&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_assignee&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.assignee&quot;,&quot;title&quot;:&quot;Assignee&quot;,&quot;prettyId&quot;:&quot;assignee&quot;,&quot;assignedMetadataField&quot;:&quot;assignee_name&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.assignee&quot;,&quot;title&quot;:&quot;Assignee&quot;,&quot;prettyId&quot;:&quot;assignee&quot;,&quot;assignedMetadataField&quot;:&quot;assignee_name&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.category1&quot;,&quot;title&quot;:&quot;Category 1&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_category1&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.category1&quot;,&quot;title&quot;:&quot;Category 1&quot;,&quot;prettyId&quot;:&quot;category1&quot;,&quot;assignedMetadataField&quot;:&quot;Category_1&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.category2&quot;,&quot;title&quot;:&quot;Category 2&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_category2&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.category2&quot;,&quot;title&quot;:&quot;Category 2&quot;,&quot;prettyId&quot;:&quot;category2&quot;,&quot;assignedMetadataField&quot;:&quot;Category_2&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.category3&quot;,&quot;title&quot;:&quot;Category 3&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_category3&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.category3&quot;,&quot;title&quot;:&quot;Category 3&quot;,&quot;prettyId&quot;:&quot;category3&quot;,&quot;assignedMetadataField&quot;:&quot;Category_3&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.customer&quot;,&quot;title&quot;:&quot;customer?&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_customer&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.customer&quot;,&quot;title&quot;:&quot;customer?&quot;,&quot;prettyId&quot;:&quot;customer&quot;,&quot;assignedMetadataField&quot;:&quot;Customer&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.customer&quot;,&quot;title&quot;:&quot;customer?&quot;,&quot;prettyId&quot;:&quot;customer&quot;,&quot;assignedMetadataField&quot;:&quot;Customer&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.customertier&quot;,&quot;title&quot;:&quot;Customer Tier&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_customertier&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.customertier&quot;,&quot;title&quot;:&quot;Customer Tier&quot;,&quot;prettyId&quot;:&quot;customertier&quot;,&quot;assignedMetadataField&quot;:&quot;Customer_Tier&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.customertype&quot;,&quot;title&quot;:&quot;Customer Type&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_customertype&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.customertype&quot;,&quot;title&quot;:&quot;Customer Type&quot;,&quot;prettyId&quot;:&quot;customertype&quot;,&quot;assignedMetadataField&quot;:&quot;Customer_Type&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.group&quot;,&quot;title&quot;:&quot;Group&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_group&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.group&quot;,&quot;title&quot;:&quot;Group&quot;,&quot;prettyId&quot;:&quot;group&quot;,&quot;assignedMetadataField&quot;:&quot;group_name&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.group&quot;,&quot;title&quot;:&quot;Group&quot;,&quot;prettyId&quot;:&quot;group&quot;,&quot;assignedMetadataField&quot;:&quot;group_name&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.internal&quot;,&quot;title&quot;:&quot;Internal&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_internal&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.internal&quot;,&quot;title&quot;:&quot;Internal&quot;,&quot;prettyId&quot;:&quot;internal&quot;,&quot;assignedMetadataField&quot;:&quot;Internal&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.internal&quot;,&quot;title&quot;:&quot;Internal&quot;,&quot;prettyId&quot;:&quot;internal&quot;,&quot;assignedMetadataField&quot;:&quot;Internal&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.jiraissue&quot;,&quot;title&quot;:&quot;JIRA Issue&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_jiraissue&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.jiraissue&quot;,&quot;title&quot;:&quot;JIRA Issue&quot;,&quot;prettyId&quot;:&quot;jiraissue&quot;,&quot;assignedMetadataField&quot;:&quot;JIRA_Issue&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.performance&quot;,&quot;title&quot;:&quot;Performance?&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_performance&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.performance&quot;,&quot;title&quot;:&quot;Performance?&quot;,&quot;prettyId&quot;:&quot;performance&quot;,&quot;assignedMetadataField&quot;:&quot;Performance&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.performance&quot;,&quot;title&quot;:&quot;Performance?&quot;,&quot;prettyId&quot;:&quot;performance&quot;,&quot;assignedMetadataField&quot;:&quot;Performance&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.priority&quot;,&quot;title&quot;:&quot;Priority&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_priority&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.priority&quot;,&quot;title&quot;:&quot;Priority&quot;,&quot;prettyId&quot;:&quot;priority&quot;,&quot;assignedMetadataField&quot;:&quot;priority&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.priority&quot;,&quot;title&quot;:&quot;Priority&quot;,&quot;prettyId&quot;:&quot;priority&quot;,&quot;assignedMetadataField&quot;:&quot;priority&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.projectid&quot;,&quot;title&quot;:&quot;Project ID&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_projectid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.projectid&quot;,&quot;title&quot;:&quot;Project ID&quot;,&quot;prettyId&quot;:&quot;projectid&quot;,&quot;assignedMetadataField&quot;:&quot;Project_ID&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.requesterdomain&quot;,&quot;title&quot;:&quot;Requester Domain&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_requesterdomain&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.requesterdomain&quot;,&quot;title&quot;:&quot;Requester Domain&quot;,&quot;prettyId&quot;:&quot;requesterdomain&quot;,&quot;assignedMetadataField&quot;:&quot;requester_domain&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.requesteremail&quot;,&quot;title&quot;:&quot;Requester Email&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_requesteremail&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.requesteremail&quot;,&quot;title&quot;:&quot;Requester Email&quot;,&quot;prettyId&quot;:&quot;requesteremail&quot;,&quot;assignedMetadataField&quot;:&quot;requester_email&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.requestername&quot;,&quot;title&quot;:&quot;Requester Name&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_requestername&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.requestername&quot;,&quot;title&quot;:&quot;Requester Name&quot;,&quot;prettyId&quot;:&quot;requestername&quot;,&quot;assignedMetadataField&quot;:&quot;requester_name&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.review&quot;,&quot;title&quot;:&quot;Review?&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_review&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.review&quot;,&quot;title&quot;:&quot;Review?&quot;,&quot;prettyId&quot;:&quot;review&quot;,&quot;assignedMetadataField&quot;:&quot;Review&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.review&quot;,&quot;title&quot;:&quot;Review?&quot;,&quot;prettyId&quot;:&quot;review&quot;,&quot;assignedMetadataField&quot;:&quot;Review&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.status&quot;,&quot;title&quot;:&quot;Status&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_status&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.status&quot;,&quot;title&quot;:&quot;Status&quot;,&quot;prettyId&quot;:&quot;status&quot;,&quot;assignedMetadataField&quot;:&quot;status&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.status&quot;,&quot;title&quot;:&quot;Status&quot;,&quot;prettyId&quot;:&quot;status&quot;,&quot;assignedMetadataField&quot;:&quot;status&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.submitter&quot;,&quot;title&quot;:&quot;Submitter&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_submitter&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.submitter&quot;,&quot;title&quot;:&quot;Submitter&quot;,&quot;prettyId&quot;:&quot;submitter&quot;,&quot;assignedMetadataField&quot;:&quot;submitter_name&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.submitter&quot;,&quot;title&quot;:&quot;Submitter&quot;,&quot;prettyId&quot;:&quot;submitter&quot;,&quot;assignedMetadataField&quot;:&quot;submitter_name&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.template&quot;,&quot;title&quot;:&quot;Template&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_template&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.template&quot;,&quot;title&quot;:&quot;Template&quot;,&quot;prettyId&quot;:&quot;template&quot;,&quot;assignedMetadataField&quot;:&quot;Template&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.template&quot;,&quot;title&quot;:&quot;Template&quot;,&quot;prettyId&quot;:&quot;template&quot;,&quot;assignedMetadataField&quot;:&quot;Template&quot;,&quot;referenceKey&quot;:true}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.ticketid&quot;,&quot;title&quot;:&quot;Ticket ID&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_ticketid&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.ticketid&quot;,&quot;title&quot;:&quot;Ticket ID&quot;,&quot;prettyId&quot;:&quot;ticketid&quot;,&quot;assignedMetadataField&quot;:&quot;ticket_id&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.tickettype&quot;,&quot;title&quot;:&quot;Ticket Type&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_tickettype&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.tickettype&quot;,&quot;title&quot;:&quot;Ticket Type&quot;,&quot;prettyId&quot;:&quot;tickettype&quot;,&quot;assignedMetadataField&quot;:&quot;ticket_type&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.zendesktickets.via&quot;,&quot;title&quot;:&quot;Via&quot;,&quot;prettyId&quot;:&quot;attr_zendesktickets_via&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.via&quot;,&quot;title&quot;:&quot;Via&quot;,&quot;prettyId&quot;:&quot;via&quot;,&quot;assignedMetadataField&quot;:&quot;via&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.zendesktickets.via&quot;,&quot;title&quot;:&quot;Via&quot;,&quot;prettyId&quot;:&quot;via&quot;,&quot;assignedMetadataField&quot;:&quot;via&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customers.organization&quot;,&quot;title&quot;:&quot;Organization&quot;,&quot;prettyId&quot;:&quot;attr_customers_organization&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customers.organization&quot;,&quot;title&quot;:&quot;Organization&quot;,&quot;prettyId&quot;:&quot;customers__organization&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;organization_name&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customers.organization&quot;,&quot;title&quot;:&quot;Organization&quot;,&quot;prettyId&quot;:&quot;customers__organization&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;assigneeupdated.date&quot;,&quot;title&quot;:&quot;Date (Ticket Initially Assigned)&quot;,&quot;prettyId&quot;:&quot;assigneeupdated&quot;,&quot;assignedMetadataField&quot;:&quot;date_initially_assigned&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;assigneeupdated.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Initially Assigned)&quot;,&quot;prettyId&quot;:&quot;assigneeupdated_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;assigneeupdated.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Initially Assigned)&quot;,&quot;prettyId&quot;:&quot;assigneeupdated_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;ticketassigned.date&quot;,&quot;title&quot;:&quot;Date (Ticket Assigned)&quot;,&quot;prettyId&quot;:&quot;ticketassigned&quot;,&quot;assignedMetadataField&quot;:&quot;date_assigned&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketassigned.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Assigned)&quot;,&quot;prettyId&quot;:&quot;ticketassigned_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketassigned.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Assigned)&quot;,&quot;prettyId&quot;:&quot;ticketassigned_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;ticketcreated.date&quot;,&quot;title&quot;:&quot;Date (Ticket Created)&quot;,&quot;prettyId&quot;:&quot;ticketcreated&quot;,&quot;assignedMetadataField&quot;:&quot;date_created&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketcreated.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Created)&quot;,&quot;prettyId&quot;:&quot;ticketcreated_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketcreated.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Created)&quot;,&quot;prettyId&quot;:&quot;ticketcreated_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;ticketdue.date&quot;,&quot;title&quot;:&quot;Date (Ticket Due)&quot;,&quot;prettyId&quot;:&quot;ticketdue&quot;,&quot;assignedMetadataField&quot;:&quot;date_due&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketdue.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Due)&quot;,&quot;prettyId&quot;:&quot;ticketdue_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketdue.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Due)&quot;,&quot;prettyId&quot;:&quot;ticketdue_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;ticketlastupdated.date&quot;,&quot;title&quot;:&quot;Date (Ticket Last Updated)&quot;,&quot;prettyId&quot;:&quot;ticketlastupdated&quot;,&quot;assignedMetadataField&quot;:&quot;date_updated&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketlastupdated.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Last Updated)&quot;,&quot;prettyId&quot;:&quot;ticketlastupdated_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketlastupdated.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Last Updated)&quot;,&quot;prettyId&quot;:&quot;ticketlastupdated_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;ticketsolve.date&quot;,&quot;title&quot;:&quot;Date (Ticket Solved)&quot;,&quot;prettyId&quot;:&quot;ticketsolve&quot;,&quot;assignedMetadataField&quot;:&quot;date_solved&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketsolve.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Solved)&quot;,&quot;prettyId&quot;:&quot;ticketsolve_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;ticketsolve.date.yyyymmdd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Ticket Solved)&quot;,&quot;prettyId&quot;:&quot;ticketsolve_date_yyyymmdd&quot;,&quot;assignedMetadataField&quot;:null,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}}],&quot;simpleFacts&quot;:[{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.agentwaittimeinminutes&quot;,&quot;title&quot;:&quot;Agent wait time in minutes&quot;,&quot;prettyId&quot;:&quot;agentwaittimeinminutes&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;agent_wait_time_in_minutes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.agentwaittimeinminuteswith&quot;,&quot;title&quot;:&quot;Agent wait time in minutes within business hours&quot;,&quot;prettyId&quot;:&quot;agentwaittimeinminuteswith&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;agent_wait_time_in_minutes_within_business_hours&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.assigneestations&quot;,&quot;title&quot;:&quot;Assignee stations&quot;,&quot;prettyId&quot;:&quot;assigneestations&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;assignee_stations&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.firstreplytimeinminutes&quot;,&quot;title&quot;:&quot;First reply time in minutes&quot;,&quot;prettyId&quot;:&quot;firstreplytimeinminutes&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;first_reply_time_in_minutes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.firstreplytimeinminuteswit&quot;,&quot;title&quot;:&quot;First reply time in minutes within business hours&quot;,&quot;prettyId&quot;:&quot;firstreplytimeinminuteswit&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;first_reply_time_in_minutes_within_business_hours&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.firstresolutiontimeinminut&quot;,&quot;title&quot;:&quot;First resolution time in minutes&quot;,&quot;prettyId&quot;:&quot;firstresolutiontimeinminut&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;first_resolution_time_in_minutes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.firstresolutiontimeinminut1&quot;,&quot;title&quot;:&quot;First resolution time in minutes within business hours&quot;,&quot;prettyId&quot;:&quot;firstresolutiontimeinminut1&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;first_resolution_time_in_minutes_within_business_hours&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.fullresolutiontimeinminute&quot;,&quot;title&quot;:&quot;Full resolution time in minutes&quot;,&quot;prettyId&quot;:&quot;fullresolutiontimeinminute&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;full_resolution_time_in_minutes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.fullresolutiontimeinminute1&quot;,&quot;title&quot;:&quot;Full resolution time in minutes within business hours&quot;,&quot;prettyId&quot;:&quot;fullresolutiontimeinminute1&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;full_resolution_time_in_minutes_within_business_hours&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.groupstations&quot;,&quot;title&quot;:&quot;Group stations&quot;,&quot;prettyId&quot;:&quot;groupstations&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;group_stations&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.ticketonholdinminutes&quot;,&quot;title&quot;:&quot;On hold time in minutes&quot;,&quot;prettyId&quot;:&quot;ticketonholdinminutes&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;on_hold_time_in_minutes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.ticketonholdinminuteswithinbusinesshours&quot;,&quot;title&quot;:&quot;On hold time in minutes within business hours&quot;,&quot;prettyId&quot;:&quot;ticketonholdinminuteswithinbusinesshours&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;on_hold_time_in_minutes_within_business_hours&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.requesterwaittimeinminutes&quot;,&quot;title&quot;:&quot;Requester wait time in minutes&quot;,&quot;prettyId&quot;:&quot;requesterwaittimeinminutes&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;requester_wait_time_in_minutes&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.requesterwaittimeinminutes1&quot;,&quot;title&quot;:&quot;Requester wait time in minutes within business hours&quot;,&quot;prettyId&quot;:&quot;requesterwaittimeinminutes1&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;requester_wait_time_in_minutes_within_business_hours&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.resolutiontime&quot;,&quot;title&quot;:&quot;Resolution time&quot;,&quot;prettyId&quot;:&quot;resolutiontime&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;resolution_time&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.satisfactionscore&quot;,&quot;title&quot;:&quot;Satisfaction Score&quot;,&quot;prettyId&quot;:&quot;satisfactionscore&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;satisfaction_score&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.reopens&quot;,&quot;title&quot;:&quot;Ticket reopens&quot;,&quot;prettyId&quot;:&quot;reopens&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;reopens&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.replies&quot;,&quot;title&quot;:&quot;Ticket replies&quot;,&quot;prettyId&quot;:&quot;replies&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;replies&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.zendesktickets.totaltimespentsec&quot;,&quot;title&quot;:&quot;Total time spent (sec)&quot;,&quot;prettyId&quot;:&quot;totaltimespentsec&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;Time_Spent&quot;}}],&quot;dateFacts&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[]}}" enabled="enabled" guiName="Tickets 2 GD Writer" guiX="931" guiY="231" id="TICKETS_2_GD_WRITER" mode="INCREMENTAL" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Edge debugMode="true" fromNode="DATA_LOAD_TIMESTAMP_GENERATOR:0" guiBendpoints="" guiRouter="Manhattan" id="Edge11" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="DATE_TO_STRING_REFORMAT:0"/>
+<Edge debugMode="true" fromNode="DATE_TO_STRING_REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge16" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="HTTP_CONNECTOR:0"/>
+<Edge debugMode="true" fromNode="HTTP_CONNECTOR:0" guiBendpoints="" guiRouter="Manhattan" id="Edge19" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="JSONREADER:0"/>
+<Edge debugMode="true" fromNode="JSONREADER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge20" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="SIMPLE_COPY:0"/>
+<Edge debugMode="true" fromNode="REFORMAT2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 0 (in)" metadata="Metadata8" outPort="Port 0 (out)" toNode="SIMPLE_GATHER2:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_COPY:0" guiBendpoints="" guiRouter="Manhattan" id="Edge24" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="TICKETS_2_GD_WRITER:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_COPY:1" guiBendpoints="" guiRouter="Manhattan" id="Edge25" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 1 (out)" toNode="REFORMAT2:0"/>
+</Phase>
+<Phase number="30">
+<Node enabled="disabled" guiName="Reformat" guiX="241" guiY="466" id="REFORMAT" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.Organization = $in.0.Organization;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node charset="ISO-8859-15" dataPolicy="lenient" enabled="disabled" fileURL="/Users/nicolegibson/Desktop/GD_Tickets.csv" guiName="Tickets Customers Reader" guiX="12" guiY="454" id="TICKETS_CUSTOMERS_READER" type="DATA_READER"/>
+<Edge debugMode="true" fromNode="REFORMAT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge9" inPort="Port 2 (in)" metadata="Metadata8" outPort="Port 0 (out)" toNode="SIMPLE_GATHER2:2"/>
+<Edge debugMode="true" fromNode="TICKETS_CUSTOMERS_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (output)" toNode="REFORMAT:0"/>
+</Phase>
+<Phase number="40">
+<Node enabled="enabled" guiName="Reformat" guiX="241" guiY="553" id="REFORMAT3" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.Organization = $in.0.Discount_Rule;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="${DATA_SOURCE_DIR}/discount_uses_July_10_2015.csv" guiName="Training Customers Reader" guiX="12" guiY="553" id="TRAINING_CUSTOMERS_READER1" type="DATA_READER"/>
+<Edge debugMode="true" fromNode="REFORMAT3:0" guiBendpoints="" guiRouter="Manhattan" id="Edge17" inPort="Port 1 (in)" metadata="Metadata8" outPort="Port 0 (out)" toNode="SIMPLE_GATHER2:1"/>
+<Edge debugMode="true" fromNode="TRAINING_CUSTOMERS_READER1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata9" outPort="Port 0 (output)" toNode="REFORMAT3:0"/>
+</Phase>
+<Phase number="50">
+<Node dataset="dataset.customers" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.customers&quot;,&quot;datasetTitle&quot;:&quot;Customers&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.customers.organization&quot;,&quot;title&quot;:&quot;Organization&quot;,&quot;prettyId&quot;:&quot;attr_customers_organization&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customers.organization&quot;,&quot;title&quot;:&quot;Organization&quot;,&quot;prettyId&quot;:&quot;organization&quot;,&quot;assignedMetadataField&quot;:&quot;Organization&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.customers.organization&quot;,&quot;title&quot;:&quot;Organization&quot;,&quot;prettyId&quot;:&quot;organization&quot;,&quot;assignedMetadataField&quot;:&quot;Organization&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;unassigneddateFacts&quot;:[],&quot;datesWithFactConflict&quot;:[]}}" enabled="enabled" guiName="Customers GD Writer" guiX="934" guiY="444" id="CUSTOMERS_GD_WRITER" mode="INCREMENTAL" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dedupKey="Organization(a)" enabled="enabled" guiName="Dedup" guiX="780" guiY="444" id="DEDUP" type="DEDUP"/>
+<Node enabled="enabled" guiName="ExtSort" guiX="615" guiY="445" id="EXT_SORT" sortKey="Organization(a)" type="EXT_SORT"/>
+<Node enabled="enabled" guiName="SimpleGather" guiX="446" guiY="444" id="SIMPLE_GATHER2" type="SIMPLE_GATHER"/>
+<Edge debugMode="true" fromNode="DEDUP:0" guiBendpoints="" guiRouter="Manhattan" id="Edge14" inPort="Port 0 (in)" metadata="Metadata8" outPort="Port 0 (unique)" toNode="CUSTOMERS_GD_WRITER:0"/>
+<Edge debugMode="true" fromNode="EXT_SORT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge8" inPort="Port 0 (in)" metadata="Metadata8" outPort="Port 0 (out)" toNode="DEDUP:0"/>
+<Edge debugMode="true" fromNode="SIMPLE_GATHER2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge12" inPort="Port 0 (in)" metadata="Metadata8" outPort="Port 0 (out)" toNode="EXT_SORT:0"/>
+</Phase>
+</Graph>
